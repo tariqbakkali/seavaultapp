@@ -25,7 +25,8 @@
         "NSPhotoLibraryAddUsageDescription": "SeaVault needs access to save photos to your library.",
         "NSLocationWhenInUseUsageDescription": "SeaVault uses your location to record where you spotted marine life.",
         "UIRequiresFullScreen": true,
-        "CFBundleDisplayName": "SeaVault"
+        "CFBundleDisplayName": "SeaVault",
+        "ITSAppUsesNonExemptEncryption": false
       }
     },
     "android": {
@@ -34,7 +35,12 @@
         "backgroundColor": "#121212"
       },
       "package": "co.uk.seavault.app",
-      "versionCode": 1
+      "versionCode": 1,
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ]
     },
     "web": {
       "bundler": "metro",
@@ -50,6 +56,14 @@
     "experiments": {
       "typedRoutes": true,
       "tsconfigPaths": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "284159c2-a976-4bce-9233-a92fe28d4278"
+      }
     }
   }
 }
