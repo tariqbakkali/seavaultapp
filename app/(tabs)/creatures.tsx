@@ -282,7 +282,7 @@ export default function CreaturesScreen() {
   return (
     <View style={styles.container}>
       <View style={styles.headerContainer}>
-        <Text style={styles.header}>DiveDex</Text>
+        <Text style={styles.header}>SeaVault</Text>
         <TouchableOpacity 
           style={styles.filterButton}
           onPress={toggleSearch}
