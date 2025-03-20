@@ -3,21 +3,28 @@
   "main": "expo-router/entry",
   "version": "1.0.0",
   "private": true,
-"expo": {
+  "expo": {
     "doctor": {
       "reactNativeDirectoryCheck": {
-        "exclude": ["@expo/ngrok", "@lucide/lab", "lucide-react-native"]
+        "exclude": [
+          "@expo/ngrok",
+          "@lucide/lab",
+          "lucide-react-native"
+        ]
       },
       "listUnknownPackages": false
     }
-  },  "scripts": {
+  },
+  "scripts": {
     "dev": "EXPO_NO_TELEMETRY=1 NODE_OPTIONS=--no-warnings expo start --tunnel",
     "start": "EXPO_NO_TELEMETRY=1 NODE_OPTIONS=--no-warnings expo start --tunnel",
     "web": "EXPO_NO_TELEMETRY=1 NODE_OPTIONS=--no-warnings expo start --web",
     "build:web": "expo export --platform web",
     "lint": "expo lint",
     "eas-build": "eas build",
-    "eas-submit": "eas submit"
+    "eas-submit": "eas submit",
+    "android": "expo run:android",
+    "ios": "expo run:ios"
   },
   "dependencies": {
     "@expo/ngrok": "^4.1.3",
